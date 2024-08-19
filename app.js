@@ -15,7 +15,7 @@ const validarFormulario = (e) => {
         document.getElementById("principal_start_input").classList.remove("textarea-incorrecto"); 
         document.getElementById("aviso-normal").style.display = "flex";
         document.getElementById("aviso-error").style.display = "none";
-        console.log("yeihh");
+        
         document.getElementById("btn-enc").disabled = false;
         document.getElementById("btn-enc").classList.add("principal_start_btn_encriptar");
         document.getElementById("btn-enc").classList.remove("false");
@@ -49,7 +49,7 @@ textAreas.forEach((textarea) =>  {
   textarea.addEventListener("keyup", validarFormulario);
   textarea.addEventListener("copy", validarFormulario);
   textarea.addEventListener("paste", validarFormulario);
-  // textarea.addEventListener("click", validarFormulario);
+  
 })
 
 // Funcionalidad: encriptado, desencriptado, copiar 
@@ -71,20 +71,10 @@ function encriptar() {
     
     
     let dropE = textUserSc.replaceAll("e", "enter");
-    // console.log(dropE);
-    
     let dropI = dropE.replaceAll("i", "imes");
-    // console.log(dropI);
-    
     let dropAletter = dropI.replaceAll("a", "ai");
-    // console.log(dropAletter);
-    
     let dropOletterr = dropAletter.replaceAll("o", "ober");
-    // console.log(dropOletterr);
-    
     let dropU = dropOletterr.replaceAll("u", "ufat");
-    // console.log(dropU);
-    
     newTextUser = dropU;
 
     document.getElementById("textEncriptar").innerHTML = newTextUser;
