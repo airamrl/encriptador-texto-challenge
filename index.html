@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo-emblema-amistad-digimon">
+    </header>
+    <main class="principal">
+
+        <form class="principal_start" action="" id="formulario">
+           
+            <textarea name="textareaStart" id="principal_start_input" class="principal_start_texto" rows="10" placeholder="Ingrese el texto aquí" ></textarea>
+            
+
+            <div class="principal_start_btn">
+                <p class="aviso" id="aviso-normal">
+                   <img src="img/bi_exclamation-circle-fill.png" alt="" > Sólo letras minúsculas y sin acentos
+                </p>
+                <p class="aviso alerta" id="aviso-error">
+                    <img src="img/bi_exclamation-circle-fill.png" alt=""> Sólo letras minúsculas y sin acentos
+                </p>
+
+                <div class="btns">
+                    <button type="submit" id="btn-enc" class="principal_start_btn_encriptar" >Encriptar</button>
+                    <button type="submit" id="btn-des" class="principal_start_btn_desencriptar">Desencriptar</button>
+
+                </div>
+            </div>
+
+        </form>
+
+        <section class="principal_end" id="id_principal_end" >
+            <div id="textEncriptar" >   
+            </div>
+
+            <div id="textEncriptar-start" >
+                <img class="principal_end_img" id="imagen" src="img/KingDetective-.png" alt="king-clawthorne">
+                <p class="principal_end_titular" id="end_titular">Ningún mensaje fue encontrado</p>
+                <p class="principal_end_texto" id="end_texto" >Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="principal_end_titular_copiar" id="end_titular_copiar">Tu texto se copió :D </p>
+
+            </div>
+            
+            <div class="btnc"id="copy"  >
+                <button id="btn-copy" class="copiarwi">Copiar</button>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer class="rodapie">
+       <small>© ailufatrai chaillenterngenter 2024</small> 
+    </footer>
+    <script src="app.js"></script>
+
+    
+
+</body>
+
+</html>
